@@ -18,9 +18,6 @@ cask "yanmo" do
 
   zap trash: [
     "~/Library/Preferences/com.microsoft.aidictation.mac.plist",
-    "~/Library/Application Support/default.store",
-    "~/Library/Application Support/default.store-shm",
-    "~/Library/Application Support/default.store-wal",
     "~/Library/Application Support/Yanmo",
     "~/Library/Logs/Yanmo",
     "~/Library/Caches/com.microsoft.aidictation.mac",
