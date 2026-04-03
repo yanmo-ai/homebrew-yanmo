@@ -10,11 +10,15 @@ cask "yanmo" do
 
   depends_on macos: ">= :sonoma"
 
+  auto_updates true
+
   app "Yanmo.app"
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{appdir}/Yanmo.app"]
   end
+
+  uninstall quit: "com.microsoft.aidictation.mac"
 
   zap trash: [
     "~/Library/Preferences/com.microsoft.aidictation.mac.plist",
