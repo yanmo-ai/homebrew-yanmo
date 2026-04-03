@@ -12,10 +12,19 @@ cask "yanmo" do
 
   app "Yanmo.app"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{appdir}/Yanmo.app"]
+  end
+
   zap trash: [
     "~/Library/Preferences/com.microsoft.aidictation.mac.plist",
+    "~/Library/Application Support/default.store",
+    "~/Library/Application Support/default.store-shm",
+    "~/Library/Application Support/default.store-wal",
     "~/Library/Application Support/Yanmo",
     "~/Library/Logs/Yanmo",
     "~/Library/Caches/com.microsoft.aidictation.mac",
+    "~/Library/HTTPStorages/com.microsoft.aidictation.mac",
+    "~/Library/HTTPStorages/com.microsoft.aidictation.mac.binarycookies",
   ]
 end
