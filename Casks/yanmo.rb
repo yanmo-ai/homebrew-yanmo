@@ -1,8 +1,8 @@
 cask "yanmo" do
-  version "0.5.7"
-  sha256 "49fbeebc8ab9b00902bc0c76e15a399576cd2f1204152138fa5dd724ecfb5d4d"
+  version "0.5.8"
+  sha256 "932610c791bd858debe68a5656e2cdd2b60d6c85efdd1a0e070932ce316db927"
 
-  url "https://github.com/yanmo-ai/homebrew-yanmo/releases/download/release-2026-04-09/Yanmo-v0.5.7.zip"
+  url "https://github.com/yanmo-ai/homebrew-yanmo/releases/download/release-2026-04-17/Yanmo-v0.5.8.zip"
   name "Yanmo"
   name "言墨"
   desc "AI-powered voice dictation tool"
